@@ -11,9 +11,7 @@
 		<nav>
 			<ul>
 				<li><img src="UI/styles/logo-xero-blue.svg"></li>
-				<li><a href="limits.php">Credit Limits</a></li>
-				<li><a href="history.php">History</a></li>
-				<li><a href="settings.php">Settings</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li style="float:right"><a href="about.php">About</a></li>
 			</ul> 
 		</nav>

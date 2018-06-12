@@ -1,0 +1,35 @@
+{
+    "name": "xero/creditlimits",
+    "description": "Xero sample app for XD18",
+    "type": "project",
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/wobinb/xero-php"
+      }
+    ],
+    "require": {
+        "wobinb/xero-php": "1.7.1",
+        "monolog/monolog": "1.0",
+        "aws/aws-sdk-php": "^3.21"
+    },
+    "autoload": {
+        "psr-4": {"AWSCognitoApp\\": ""}
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JamesColeman",
+            "email": "james.coleman@xero.com"
+        },
+        {
+            "name": "BenGlazier",
+            "email": "ben.glazier@xero.com"
+        },
+        {
+            "name": "RobinBlackstone",
+            "email": "robin.blackstone@xero.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

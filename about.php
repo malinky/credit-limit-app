@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <html>
 <head>
 	<title>XD18 | About</title>
@@ -9,11 +13,27 @@
 </head>
 	<body>
 		<nav>
-			<ul>
-				<li><img src="UI/styles/logo-xero-blue.svg"></li>
-				<li><a href="index.php">Home</a></li>
-				<li style="float:right"><a href="about.php">About</a></li>
-			</ul> 
+        <?php
+				if($_SESSION['user'] === NULL)
+				{
+					echo '<ul>';
+					echo '	<li><img src="UI/styles/logo-xero-blue.svg"></li>';
+					echo '	<li><a href="index.php">Home</a></li>';
+					echo '	<li style="float:right"><a href="about.php">About</a></li>';
+					echo '</ul>'; 					
+				}
+				else
+				{
+					echo '<ul>';
+					echo '	<li><img src="UI/styles/logo-xero-blue.svg"></li>';
+					echo '	<li><a href="limits.php">Credit Limits</a></li>';
+					echo '	<li><a href="history.php">History</a></li>';
+					echo '	<li><a href="settings.php">Settings</a></li>';
+					echo '	<li style="float:right"><a href="about.php">About</a></li>';
+					echo '	<li style="float:right"><a href="settings.php">User: '.$_SESSION['user'].'</a> </li> ';
+					echo '</ul> ';
+				}
+            ?> 
 		</nav>
 		<h1>About</h1>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/bU1nU7rpz_8?autoplay=1&controls=0&playlist=bU1nU7rpz_8&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

@@ -1,4 +1,9 @@
-# Xero + AWS - CreditLimits Sample App
+# Xero + AWS - CreditLimits Sample App (deprecated)
+
+## OAuth1.0a deprecation
+* Early December 2019 - No new OAuth 1.0a apps created.
+* Mid December 2019 - OAuth 2.0 migration endpoint available to partner apps.
+* December 2020 - OAuth 1.0a no longer supported for existing integrations.
 
 ## How the sample app works
 
